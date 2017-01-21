@@ -1,0 +1,9 @@
+<?php
+$loader = new \Phalcon\Loader();
+$loader->registerNamespaces([
+	'Folders\ApiV3' => $config->application->appDir . 'api-v3',
+	'Folders\ApiV3\Otherresource' => $config->application->appDir . 'api-v3/otherresource',
+	'Folders\ApiV3\ResourceOne' => $config->application->appDir . 'api-v3/resource-one',
+	'Folders\Util\Common' => $config->application->appDir . 'util/common',
+]);
+$loader->register();

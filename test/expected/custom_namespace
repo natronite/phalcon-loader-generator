@@ -1,0 +1,13 @@
+<?php
+$loader = new \Phalcon\Loader();
+$loader->registerNamespaces([
+	'Natronite\ApiV3' => __DIR__ . '/my-application/src/' . 'api-v3',
+	'Natronite\ApiV3\Otherresource' => __DIR__ . '/my-application/src/' . 'api-v3/otherresource',
+	'Natronite\ApiV3\ResourceOne' => __DIR__ . '/my-application/src/' . 'api-v3/resource-one',
+	'Natronite\OAuth' => __DIR__ . '/my-application/src/' . 'o_auth',
+	'Natronite\OAuth\AuthServer' => __DIR__ . '/my-application/src/' . 'o_auth/authServer',
+	'Natronite\Util' => __DIR__ . '/my-application/src/' . 'util',
+	'Natronite\Util\ThirdParty' => __DIR__ . '/my-application/src/' . 'util/ThirdParty',
+	'Natronite\Util\Common' => __DIR__ . '/my-application/src/' . 'util/common',
+]);
+$loader->register();

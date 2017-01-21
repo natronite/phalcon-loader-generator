@@ -1,0 +1,14 @@
+<?php
+$loader = new \Phalcon\Loader();
+$loader->registerNamespaces([
+	'Test\TestSrc' => $config->application->appDir . 'test/test-src',
+	'Test\TestSrc\ApiV3' => $config->application->appDir . 'test/test-src/api-v3',
+	'Test\TestSrc\ApiV3\Otherresource' => $config->application->appDir . 'test/test-src/api-v3/otherresource',
+	'Test\TestSrc\ApiV3\ResourceOne' => $config->application->appDir . 'test/test-src/api-v3/resource-one',
+	'Test\TestSrc\OAuth' => $config->application->appDir . 'test/test-src/o_auth',
+	'Test\TestSrc\OAuth\AuthServer' => $config->application->appDir . 'test/test-src/o_auth/authServer',
+	'Test\TestSrc\Util' => $config->application->appDir . 'test/test-src/util',
+	'Test\TestSrc\Util\ThirdParty' => $config->application->appDir . 'test/test-src/util/ThirdParty',
+	'Test\TestSrc\Util\Common' => $config->application->appDir . 'test/test-src/util/common',
+]);
+$loader->register();
